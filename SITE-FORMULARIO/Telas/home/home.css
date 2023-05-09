@@ -35,12 +35,12 @@
     appearance: none;
     background-color: inherit;
     box-shadow: 5px 5px 5px rgba(216, 216, 216, 0.164);
-    border-radius: 25%;
+    border-radius: 20%;
     
   }
 
   .cards img {
-    border-radius: 25%;
+    border-radius: 20%;
   }
 
   .cards button:hover {
