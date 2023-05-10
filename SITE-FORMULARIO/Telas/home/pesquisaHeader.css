@@ -14,12 +14,12 @@
   /*  when rotating changed icon color */
   --height: 50px;
   /*  height */
-  width: 600px;
+  width: 400px;
   padding-inline-end: 1em;
   /*  change this for padding in the end of input */
   background: var(--input-bg);
   position: relative;
-  border-radius: 4px;
+  border-radius: 8px;
   
 }
 
