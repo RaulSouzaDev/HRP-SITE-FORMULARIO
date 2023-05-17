@@ -1,0 +1,180 @@
+
+
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    
+}
+
+.mainLogin{
+    width: 100vw;
+    height: 100vh;
+    background: #F2F2F2; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    outline:none;
+
+ 
+    
+}
+
+
+
+.Login>img{
+    width: 60%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    outline: none;
+   
+    
+    
+    
+}
+
+.Login>h1{
+    width: 100%;
+    color: #047857;
+    display:flex;
+    justify-content: center;
+    font-size: 28pt;
+    margin-bottom: 3%;
+    font-weight: 500;
+    padding-bottom: 20%;
+    outline: none;
+    
+    
+}
+
+.Login>h2{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    font-size: 16pt;
+    margin-bottom: 6%;
+    margin-top: 0%;
+    font-weight: 400;
+    padding-bottom: 10%;
+    outline: none;
+    translate: 0% -50%;
+    
+}
+
+.Login>h3{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.Login>h4{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    translate: 4%;
+    font-size: 10pt;
+    font-weight: 300;
+    outline: none;
+    
+    
+    
+}
+
+.Login>button{
+    width: 50%;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    outline: none;
+    border-radius: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #F2F2F2;
+    background-color: #047857;
+    cursor: pointer;
+    box-shadow: 0px 10px -12px #34D399;
+    translate: 55% -150%;
+    outline: none;
+
+}
+.cardLogin{
+   
+    width: 100%;
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 30px 0px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    translate: -2%;
+    min-height: 100;
+    max-width: 350px;
+    padding-bottom: 10%;
+    outline: none;
+
+   
+ 
+  
+}
+
+
+.textield{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    outline: none;
+   
+
+}
+
+.imagem{
+    width: 100%;
+    padding: bottom 15%;
+    outline: none;
+   
+}
+
+.input{
+   width: 100%;
+}
+
+.Quadrado1{
+
+   padding: 5% 18%;
+   translate: -7% -95%;
+  
+}
+
+.user {
+ position: absolute;
+ translate: -220% -130%;
+ scale: 130%;
+
+}
+
+.Quadrado2{
+
+    padding: 5% 18%;
+    translate: -7% -95%;
+    
+ 
+ 
+ }
+
+ .lock {
+    position: absolute;
+    translate: -220% -130%;
+    scale: 130% ;
+    
+   
+    
+   }
