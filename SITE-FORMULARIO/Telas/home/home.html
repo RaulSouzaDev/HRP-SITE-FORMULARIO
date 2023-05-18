@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -23,13 +23,13 @@
   <!--Navbar-->
   <nav class="navbar">
     <div class="container-fluid position-relative">
-      
       <!--Logo-->
-      <img src="../../images/logoHorizontal.png" class=" float-start" alt="logo" width="350px" height="100%">
-      
+      <a href="#">
+      <img src="https://rhp.com.br/wp-content/uploads/2021/08/logo-rhp-horizontal.svg" class=" float-start logo" alt="logo">
+      </a>
       <!--Barra de Pesquisa-->
-      <form class="form">
-        <label for="search">
+      <!--<form class="form">
+        <label for="search" class="labelSearch">
           <input required="" autocomplete="off" placeholder="Buscar formulários" id="search" type="text">
           <div class="icon">
             <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
@@ -50,10 +50,60 @@
             </svg>
           </button>
         </label>
+      </form>-->
+      
+        <form class="form">
+          <label for="search" class="labelSearch">
+            <input required="" autocomplete="off" placeholder="Buscar formulários" id="search" type="text">
+            <div class="icon">
+              <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round">
+                </path>
+              </svg>
+              <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+              </svg>
+            </div>
+            <button type="reset" class="close-btn">
+              <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </button>
+          </label>
       </form>
 
+      <!--<div class="divNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+      <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+
+        <ul>
+          <li id="home">
+            <a  href="../home/home.html">Home
+            </a>
+          </li>
+          <li>
+            <a href="../Galeria/galeria.html">Galeria de formulários
+            </a>
+          </li>
+          <li id="sair">
+            <a href="../login/login.html">Sair
+            </a>
+          </li>
+        </ul>
+
       <!--Barra lateral-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      <!--<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,7 +130,8 @@
               </a>
             </li>
         </div>
-      </div>
+      </div>-->
+      
     </div>
   </nav>
 
@@ -88,37 +139,121 @@
 
 
   <!--formulários-->
+<section>
+<div class="geral">
+  <h1>FORMULÁRIOS RECENTES</h1>
+
   <div class="cards">
 
-    
-    <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
-        <button>
+    <div class="card">
+      <div class="content">
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
-        <div class="card-body ">
         <h5 class="card-title">Formulário 01</h5>
         <p class="fs-6 card-text mb-2 text-muted">
-            <img src="../../images/icone_forms.png"  width="25" height="100%">
-            data: 23/04/2023</p>
-        </button>
-      </a>
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
     </div>
-
-    <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
-        <button>
+    
+    <div class="card">
+      <div class="content">
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
-        <div class="card-body ">
         <h5 class="card-title">Formulário 02</h5>
         <p class="fs-6 card-text mb-2 text-muted">
-            <img src="../../images/icone_forms.png"  width="25" height="100%">
-            data: 23/04/2023</p>
-        </button>
-      </a>
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
+    </div>
+    
+    <div class="card">
+      <div class="content">
+        <img src="../../images/formulario.png" class="card-img-top" alt="...">
+        <h5 class="card-title">Formulário 03</h5>
+        <p class="fs-6 card-text mb-2 text-muted">
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <img src="../../images/formulario.png" class="card-img-top" alt="...">
+        <h5 class="card-title">Formulário 04</h5>
+        <p class="fs-6 card-text mb-2 text-muted">
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <img src="../../images/formulario.png" class="card-img-top" alt="...">
+        <h5 class="card-title">Formulário 05</h5>
+        <p class="fs-6 card-text mb-2 text-muted">
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <img src="../../images/formulario.png" class="card-img-top" alt="...">
+        <h5 class="card-title">Formulário 06</h5>
+        <p class="fs-6 card-text mb-2 text-muted">
+          <img src="../../images/icone_forms.png"  width="25" height="100%">   data: 23/04/2023</p>
+      </div>
+      <a href="../forms/form.html" target="_blank">
+        <img src="../../images/engrenagem.svg" class="eng" alt="...">
+        </a>
+        <a href="">
+          <img src="../../images/trash.svg" class="trash" alt="...">
+        </a>
+    </div>
+
+
+    <!--<div class="container" id="botao">
+      <div class ="content">
+        <a class="nav-link" href="../forms/form.html">
+          <button>
+          <img src="../../images/formulario.png" class="card-img-top" alt="...">
+          <div class="card-body ">
+          <h5 class="card-title">Formulário 02</h5>
+          <p class="fs-6 card-text mb-2 text-muted">
+              <img src="../../images/icone_forms.png"  width="25" height="100%">
+              data: 23/04/2023</p>
+          </button>
+        </a>
+      </div>
     </div>
 
     <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
+      <div class ="content">
+      <a class="nav-link" href="../forms/form.html">
         <button>
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
         <div class="card-body ">
@@ -128,10 +263,12 @@
             data: 23/04/2023</p>
         </button>
       </a>
+      </div>
     </div>
 
     <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
+      <div class ="content">
+      <a class="nav-link" href="../forms/form.html">
         <button>
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
         <div class="card-body ">
@@ -141,10 +278,12 @@
             data: 23/04/2023</p>
         </button>
       </a>
+      </div>
     </div>
 
     <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
+      <div class ="content">
+      <a class="nav-link" href="../forms/form.html">
         <button>
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
         <div class="card-body ">
@@ -154,10 +293,12 @@
             data: 23/04/2023</p>
         </button>
       </a>
+       </div>
     </div>
 
     <div class="container" id="botao">
-      <a class="nav-link" href="../forms preenchido/formPreenchido.html">
+      <div class ="content">
+      <a class="nav-link" href="../forms/form.html">
         <button>
         <img src="../../images/formulario.png" class="card-img-top" alt="...">
         <div class="card-body ">
@@ -168,14 +309,10 @@
         </button>
       </a>
     </div>
-
-
-
+    </div> -->
+    </div>
   </div>
-
-
-
-
+</section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
